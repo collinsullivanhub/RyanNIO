@@ -15,12 +15,14 @@ def buy():
 	print("Buying NIO...")
 	buy_order = robinhood_client.place_market_buy_order(stock_instrument['url'], 'NIO', 'GFD', 1)
 	order_id = order.json()['id']
+	return order_id
 
 
 def sell():
 	print("Selling NIO...")
-	sell_order = robinhood_client.place_market_sell_order(stock_instrument['url'], 'NIO', 'GFD', 1)
+	sell_order = robinhood_client.place_market_sell_order(stock_instrument['url'], 'DWT', 'GFD', 1)
 	order_id = order.json()['id']
+	return order_id
 
 def get_NIO_info():
 	quote = robin_stocks.stocks.get_ratings('NIO', info=None)
