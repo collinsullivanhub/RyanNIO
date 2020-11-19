@@ -6,7 +6,7 @@ from Robinhood import Robinhood
 
 
 
-def get_stonk_login:
+def get_stonk_login():
 	robinhood_client = Robinhood()
 	robinhood_client.login(username='yourusername@mail.com', password='yourpassword')
 
